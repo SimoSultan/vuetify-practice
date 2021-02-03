@@ -91,6 +91,9 @@ export default {
         ],
         right: null,
     }),
+    mounted() {
+        this.$store.dispatch("getTasks")
+    },
     components: {
         search: require("@/components/tools/Search.vue").default,
         snackbar: require("@/components/shared/Snackbar.vue").default,
