@@ -21,6 +21,7 @@ It has an about page with lorem ipsum to learn about Vue Router, and a basic nav
 -   [Vuex](https://vuex.vuejs.org/) - state management for Vue
 -   [Vuedraggable](https://www.npmjs.com/package/vuedraggable) - package allows tasks to be sorted by dragging
 -   [Localbase](https://github.com/dannyconnell/localbase) - an offline database stored in the user's browser
+-   [Netlify](https://www.netlify.com/) - where the client side code is deployed
 
 ### Author
 
