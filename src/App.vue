@@ -45,8 +45,8 @@
             color="primary"
             dark
             prominent
-            height="230"
             src="mountains.jpg"
+            :height="$route.path === '/' ? 230 : 160"
         >
             <template v-slot:img="{ props }">
                 <v-img
@@ -71,7 +71,7 @@
                 <v-row>
                     <live-date-time />
                 </v-row>
-                <v-row>
+                <v-row v-if="$route.path === '/'">
                     <field-add-task />
                 </v-row>
             </v-container>
@@ -95,6 +95,7 @@ export default {
         right: null,
     }),
     mounted() {
+        console.log(this.$route)
         this.$store.dispatch("getTasks")
     },
     components: {
